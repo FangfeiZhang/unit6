@@ -1,0 +1,25 @@
+<div class = "sidebar">
+    {% assign post = site.posts.first %}
+    <h1>Recent Posts</h1>
+    <img src = "{{baseurl}}/images/{{post.img}}" alt = "">
+    <h2>{{post.title}}</h2>
+    <span>
+        By {{post.author}} on {{post.date | date: '%B %d, %Y'}}
+    </span>
+    <p>
+        {{post.excerpt | strip_html | truncatewords: 15 }}
+    </p>
+</div>
+
+
+<!--
+<div class="sidebar">
+    <h1>Recent Posts</h1>
+    <img src="images/on-diet.png" alt="">
+    <h2>ON THE DIET</h2>
+    <span>By Admin on November 28, 2023</span>
+    <p>You can replace all this text with your own text. You can remove any link to our website from this website template.</p>
+    <a href="singlepost.html" class="more">Read More</a>
+</div>
+</div>
+-->
